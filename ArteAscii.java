@@ -5,7 +5,7 @@ class ArteAscii {
 
         Scanner scan = new Scanner(System.in);
         int value = scan.nextInt();
-
+        scan.close();
         for(int i = value; i > 0; i-- ){
             for(int j = 0; j < i; j++ ) System.out.print("*");
             System.out.println();

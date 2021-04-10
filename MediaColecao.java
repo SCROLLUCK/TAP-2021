@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.List;
 import java.util.ArrayList;
 
 class MediaColecao {
@@ -8,7 +7,6 @@ class MediaColecao {
         float value = 0;
         Scanner scan = new Scanner(System.in);
         ArrayList<Float> values = new ArrayList<Float>();
-        
         while(value != -1 ){
             value = scan.nextFloat();
             if(value != -1){
@@ -16,6 +14,7 @@ class MediaColecao {
                 media += value;
             } 
         }
+        scan.close();
         
         System.out.printf("%.2f", media/values.size());
     }

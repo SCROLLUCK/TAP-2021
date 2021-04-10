@@ -6,6 +6,7 @@ class FolhaPagamento {
         Scanner scan = new Scanner(System.in);
         double hora = scan.nextFloat();
         int quantidadeHoras = scan.nextInt();
+        scan.close();
         double salarioBruto = hora*quantidadeHoras;
         double IR = (11*salarioBruto)/100;
         double INSS = (8*salarioBruto)/100;

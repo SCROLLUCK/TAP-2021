@@ -4,6 +4,7 @@ class DataExtenso {
     public static void main (String args[]){
         Scanner scan = new Scanner(System.in);
         String data = scan.next();
+        scan.close();
         //21102015
         String dia = data.substring(0,2);
         int mes = Integer.parseInt(data.substring(2,4));

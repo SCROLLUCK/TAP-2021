@@ -1,7 +1,5 @@
 import java.util.Scanner;
-import java.util.List;
 import java.util.ArrayList;
-import java.util.Collections;
 
 class PorcentagemAcerto {
 
@@ -32,7 +30,7 @@ class PorcentagemAcerto {
                 }
             }
         }
-
+        scan.close();
         for(int i = 0; i < Respostas.size();i++){
             if (Respostas.get(i) == Gabarito.get(i)) result +=1;
         }

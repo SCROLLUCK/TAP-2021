@@ -3,6 +3,7 @@ import java.util.Scanner;
 class AreaVolume {
     public static void main(String args[]){
         Scanner scan = new Scanner(System.in);
+        scan.close();
         double value = scan.nextDouble();
 
         double Area = Math.PI* Math.pow(value,2);

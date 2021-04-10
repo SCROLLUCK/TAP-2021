@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -18,13 +17,12 @@ class OperacoesInteiros {
         Scanner scan = new Scanner(System.in);
         ArrayList<Float> values = new ArrayList<Float>();
 
-        while(!STR.equals('\n') && !end){
+        while(!STR.equals("\n") && !end){
 
             STR = scan.next();
             value = Float.parseFloat(STR);
             if(value != -1){
 
-                int chato = (value%2 == 0) ? par++ : impar++;
                 soma += value;
                 values.add(value);
 
@@ -57,6 +55,7 @@ class OperacoesInteiros {
 
             }
         }
+        scan.close();
     }
 
     public static void main(String args[]){

@@ -11,6 +11,7 @@ class ParImpar {
                 else System.out.println("IMPAR");
             }
         }
+        scan.close();
         
     }
 }

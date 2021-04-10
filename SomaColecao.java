@@ -10,6 +10,7 @@ class SomaColecao {
             value = scan.nextInt();
             if(value != -1) soma += value;
         }
+        scan.close();
         
         System.out.printf("%d",soma);
     }

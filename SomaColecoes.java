@@ -1,7 +1,5 @@
 import java.util.Scanner;
-import java.util.List;
 import java.util.ArrayList;
-import java.util.Collections;
 
 class SomaColecoes {
 
@@ -35,6 +33,7 @@ class SomaColecoes {
 
             }
         }
+        scan.close();
     }
 
     public static void main(String args[]){

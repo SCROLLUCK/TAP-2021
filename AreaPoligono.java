@@ -1,7 +1,5 @@
 import java.util.Scanner;
-import java.util.List;
 import java.util.ArrayList;
-import java.util.Collections;
 
 class AreaPoligono {
 
@@ -16,7 +14,7 @@ class AreaPoligono {
         ArrayList<Float> X = new ArrayList<Float>();
         ArrayList<Float> Y = new ArrayList<Float>();
 
-        while(!STR.equals('\n') && !end){
+        while(!STR.equals("\n") && !end){
 
             STR = scan.next();
             value = Float.parseFloat(STR);
@@ -45,7 +43,7 @@ class AreaPoligono {
         result = (1.0/2.0) * (result);
 
         System.out.printf("%.4f\n", result);
-        
+        scan.close();
     }
 
     public static void main(String args[]){

@@ -5,7 +5,7 @@ class Xadrez {
 
         Scanner scan = new Scanner(System.in);
         int value = scan.nextInt();
-
+        scan.close();
         for(int i = 0; i < value; i++ ){
             if(i%2 != 0) System.out.print(" ");
             for(int j = 0; j < value; j++ ){
