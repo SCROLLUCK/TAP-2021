@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+class RaizQuadrada {
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        double raiz = Math.sqrt(scan.nextFloat());
+        scan.close();
+        System.out.printf("%.4f\n", raiz);
+    }
+}
