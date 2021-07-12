@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    tools:context=".AtualizaMesaActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Mesa:"
+        android:textColor="#FDFCFC"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Numero de Clientes:"
+        android:textColor="#FAF8F8"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ocupada"
+        app:layout_constraintTop_toBottomOf="@+id/ocupada" />
+
+    <EditText
+        android:id="@+id/numeroClientes"
+        android:layout_width="76dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="4"
+        android:textColor="#FDFAFA"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pedidosList"
+        android:layout_width="345dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:onClick="adicionarPedido"
+        android:text="Adicionar Pedido"
+        app:layout_constraintStart_toStartOf="@+id/pedidosList"
+        app:layout_constraintTop_toBottomOf="@+id/pedidosList" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lista de Pedidos"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mesa_id" />
+
+    <TextView
+        android:id="@+id/mesa_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2"
+        android:textColor="#F44336"
+        android:textSize="90dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Switch
+        android:id="@+id/ocupada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:text="Ocupada"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mesa_id"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

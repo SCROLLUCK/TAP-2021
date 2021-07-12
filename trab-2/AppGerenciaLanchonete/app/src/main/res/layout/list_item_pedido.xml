@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="15dp"
+    android:background="#F44336">
+
+    <TextView
+        android:id="@+id/itemLabelPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Preco: R$"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/itemQuantidade"
+        app:layout_constraintTop_toTopOf="@+id/itemLabelQuantidade" />
+
+    <TextView
+        android:id="@+id/itemNomePedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Pizza de Pepperoni"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/itemLabelNomePedido"
+        app:layout_constraintTop_toTopOf="@+id/itemLabelNomePedido" />
+
+    <TextView
+        android:id="@+id/itemQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="4"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/itemLabelQuantidade"
+        app:layout_constraintTop_toTopOf="@+id/itemLabelQuantidade" />
+
+    <TextView
+        android:id="@+id/itemLabelNomePedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:text="Nome:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemLabelQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Quantidade:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/itemLabelNomePedido" />
+
+    <TextView
+        android:id="@+id/itemPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="50"
+        android:textColor="#F8F6F6"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/itemLabelPreco"
+        app:layout_constraintTop_toTopOf="@+id/itemLabelPreco" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    tools:context=".ListMesasActivity">
+
+    <TextView
+        android:id="@+id/titleMesasList"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Lista de Mesas"
+        android:textColor="#F8F6F6"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mesasList"
+        android:layout_width="345dp"
+        android:layout_height="520dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/titleMesasList"
+        app:layout_constraintTop_toBottomOf="@+id/titleMesasList" />
+
+    <Button
+        android:id="@+id/adicionarMesa"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="adicionarMesa"
+        android:text="Adicionar Mesa"
+        app:layout_constraintStart_toStartOf="@+id/mesasList"
+        app:layout_constraintTop_toBottomOf="@+id/mesasList" />
+</androidx.constraintlayout.widget.ConstraintLayout>

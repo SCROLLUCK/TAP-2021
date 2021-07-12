@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    tools:context=".CadastroGarcomActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="345dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Cadastro de garçons"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/cadastraGarcom"
+        android:layout_width="345dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:onClick="cadastrarGarcom"
+        android:text="cadastrar garçom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/masculino" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="345dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="68dp"
+        android:text="Nome"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="345dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="CPF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="16dp">
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="345dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="21dp"
+        android:text="Gênero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editPreco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPreco" />
+
+    <EditText
+        android:id="@+id/editPreco"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <RadioButton
+        android:id="@+id/feminino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="Feminino"
+        android:textColor="#F8F8F8"
+        app:layout_constraintStart_toEndOf="@+id/masculino"
+        app:layout_constraintTop_toTopOf="@+id/masculino" />
+
+    <RadioButton
+        android:id="@+id/masculino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="Masculino"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

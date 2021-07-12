@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:layout_marginBottom="15dp"
+    android:background="#673AB7">
+
+    <TextView
+        android:id="@+id/itemLabelPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="15dp"
+        android:text="Status:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemLabelNomePedido"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/itemNomePedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/itemLabelNomePedido"
+        app:layout_constraintTop_toTopOf="@+id/itemLabelNomePedido" />
+
+    <TextView
+        android:id="@+id/itemLabelNomePedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="15dp"
+        android:text="N° Clientes:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemNumero"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <TextView
+        android:id="@+id/itemNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1"
+        android:textColor="#F6F4F4"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:text="Ocupada"
+        android:textColor="@color/destaque"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/itemLabelPreco"
+        app:layout_constraintTop_toTopOf="@+id/itemLabelPreco" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
